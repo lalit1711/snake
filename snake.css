@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameGrid{
+    background: linear-gradient(rgb(215, 248, 163), rgb(219, 245, 150));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18,1fr);
+} 
+.snake-tail{
+    background-image:url("https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2021-05-23T02%3A00%3A12.955Z");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(1.3) rotate(-138deg);
+}
+
+.snake-body{
+    background: linear-gradient(rgb(94, 224, 90), rgb(221, 253, 106));
+    
+}
+
+.snake-head{
+    background-image: url("https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2021-05-23T01%3A26%3A56.968Z");
+    transform: scale(1.3) rotate(180deg);
+    border-radius: 40%;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+
+.food{
+    background-image: url("https://image-dock-uploads-be.s3.ap-south-1.amazonaws.com/image.2021-05-23T04%3A38%3A33.163Z");
+    background-size: contain;
+    transform: scale(1.5)
+}
+
+.speed-box{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+}
+
+#speedInput{
+    width: 25%;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
